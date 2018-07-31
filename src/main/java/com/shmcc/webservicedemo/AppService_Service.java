@@ -15,7 +15,7 @@ import javax.xml.ws.Service;
  * 
  */
 @WebServiceClient(name = "AppService", 
-                  wsdlLocation = "file:/C:/Users/john/AppData/Local/Temp/tempdir7467035380586725310.tmp/yc_1.wsdl",
+                  //wsdlLocation = "file:/C:/Users/john/AppData/Local/Temp/tempdir7467035380586725310.tmp/yc_1.wsdl",
                   targetNamespace = "http://webserviceDemo.shmcc.com/") 
 public class AppService_Service extends Service {
 
@@ -26,8 +26,8 @@ public class AppService_Service extends Service {
     static {
         URL url = null;
         try {
-            url = new URL("file:/C:/Users/john/AppData/Local/Temp/tempdir7467035380586725310.tmp/yc_1.wsdl");
-        } catch (MalformedURLException e) {
+            url = null;//new URL("file:/C:/Users/john/AppData/Local/Temp/tempdir7467035380586725310.tmp/yc_1.wsdl");
+        } catch (Exception e) {
             java.util.logging.Logger.getLogger(AppService_Service.class.getName())
                 .log(java.util.logging.Level.INFO, 
                      "Can not initialize the default wsdl from {0}", "file:/C:/Users/john/AppData/Local/Temp/tempdir7467035380586725310.tmp/yc_1.wsdl");

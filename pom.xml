@@ -54,6 +54,7 @@
 			<scope>runtime</scope>
 			<version>5.1.6</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -75,12 +76,21 @@
 		</dependency>
 	</dependencies>
 
+
+
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>  
+		        <groupId>org.apache.maven.plugins</groupId>  
+		        <artifactId>maven-surefire-plugin</artifactId>  
+		        <configuration>  
+		          <skipTests>true</skipTests>  
+		        </configuration>  
+	      </plugin>  
 		</plugins>
 	</build>
 

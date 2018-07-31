@@ -28,7 +28,7 @@ import org.springframework.stereotype.Component;
                       serviceName = "AppService",
                       portName = "AppServiceImplPort",
                       targetNamespace = "http://webserviceDemo.shmcc.com/",
-                      wsdlLocation = "file:/C:/Users/john/AppData/Local/Temp/tempdir7467035380586725310.tmp/yc_1.wsdl",
+                      //wsdlLocation = "file:/C:/Users/john/AppData/Local/Temp/tempdir7467035380586725310.tmp/yc_1.wsdl",
                       endpointInterface = "com.shmcc.webservicedemo.AppService")
 @Component     
 public class AppServiceImplPortImpl implements AppService {
