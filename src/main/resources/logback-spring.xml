@@ -13,6 +13,7 @@ debug：当此属性设置为true时，将打印出logback内部日志信息，�
     <property name="appName_Sysout" value="systemOut"></property>
     <!-- ch.qos.logback.core.ConsoleAppender 表示控制台输出 -->
     
+    
     <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
         <!--
         日志输出格式：
