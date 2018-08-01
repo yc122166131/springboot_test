@@ -13,6 +13,7 @@ spring:
     username: cms
     password: password123
     driver-class-name: oracle.jdbc.OracleDriver
+#   url: jdbc:oracle:thin:@(DESCRIPTION=(FAILOVER=on)(LOAD_BALANCE=off)(ADDRESS=(PROTOCOL=TCP)(HOST=10.9.41.18)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST=10.9.41.19)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=OADATA)(FAILOVER_MODE =(TYPE=SESSION)(METHOD=BASIC))))
     url: jdbc:oracle:thin:@10.9.47.159:1521:cmctdb
     type: com.alibaba.druid.pool.DruidDataSource
 #   数据源其他配置
@@ -74,4 +75,9 @@ mybatis:
   config-location: classpath:mybatis/mybatis-config.xml
   # 指定sql映射文件位置
   mapper-locations: classpath:mybatis/mapper/*.xml
+logging:
+  level:
+    com.shmcc: trace
+  #pattern:
+    #file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
   
